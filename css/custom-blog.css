@@ -25,6 +25,9 @@ h1 {
   font-size: 30px;
 }
 
+footer p {
+  text-align: center;
+}
 
 
 /* Thumbnails
@@ -65,33 +68,45 @@ a.thumbnail.active {
   /*border-color: #337ab7;*/
 }
 .thumbnail .caption {
-	color: #FFF;
+  color: #FFF;
   position: absolute;
-  top: 50%;
+  bottom: 0px;
   text-align: center;
   width: 100%;
-  font-size: 21px;
+  font-size: 20px;
   text-transform: uppercase;
-  letter-spacing: 4pt;
+  letter-spacing: 2.5pt;
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 100;
 }
 
 .overlay {
- position: absolute;
+   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, .55);
+  background-color: rgba(0, 0, 0, 0.3);
   color: #fff;
+}
+
+.overlay:hover{
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.2s linear;
 }
 
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
+.container.social-media-top{
+  background-color: #000;
+  width: 100%;
+}
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
   left: 0;
@@ -114,8 +129,10 @@ a.thumbnail.active {
 
 @media (min-width: 1200px) {
   .container {
-    width: 100%;
+    width: 85%;
   }
+
+
 
 .navbar-brand {
   float: none;
@@ -467,7 +484,7 @@ a.thumbnail.active {
 .navbar-default {
   background-color: transparent;
   border-color: transparent;
-  font-size: 12px;
+  font-size: 13px;
   text-transform: uppercase;
   color: #000;
   font-weight: 500;
@@ -478,8 +495,6 @@ a.thumbnail.active {
 }
 
 .navbar-default:hover{
-	transition: 0.3s ease-in-out;
-  background-color: rgba(255, 255, 255, 0.77);
 }
 
 .navbar-default .navbar-brand:hover,
@@ -633,17 +648,77 @@ height:100%;
 ------------------------- */
 
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  margin: 20px 0; /* Space out the Bootstrap <hr> more */
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #797777;
 }
 
 /* Thin out the marketing headings */
 .featurette-heading {
   font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
+  /*line-height: 2;*/
+  letter-spacing: 0px;
+  text-align: center;
+  padding: 4px 10px;
 }
 
+img.featurette-image{
+  width: 60%;
+}
 
+.post-title{
+   font-weight: 300;
+  color: #000;
+  letter-spacing: 1.5px;
+  font-size: 25px;
+}
+
+.post-date{
+    text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.post-category{
+    text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  /* background-color: rgb(81, 80, 80); */
+  /* color: #FFFFFF; */
+  /* padding: 3px 6px; */
+  /* border-radius: 2px; */
+  margin-left: 20px;
+}
+
+.post-author{
+      text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  /* background-color: rgb(81, 80, 80); */
+  /* color: #FFFFFF; */
+  /* padding: 3px 6px; */
+  /* border-radius: 2px; */
+  margin-left: 20px;
+}
+
+.lead {
+    font-family: 'Noto Serif', serif;
+  margin-bottom: 20px;
+  font-size: 14px;
+  /* font-weight: 300; */
+  line-height: 2;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .lead {
+     font-family: 'Noto Serif', serif;
+  }
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -651,7 +726,8 @@ height:100%;
 @media (min-width: 768px) {
   /* Navbar positioning foo */
   .navbar-wrapper {
-    /*margin-top: 20px;*/
+      /* margin-bottom: 20px; */
+  box-shadow: 1px 1px 8px #D8D7D7;
   }
   .navbar-wrapper .container {
  /*   padding-right: 15px;
@@ -679,16 +755,29 @@ height:100%;
   }
 
   .featurette-heading {
-    font-size: 50px;
+    font-size: 30px;
   }
 }
 
 @media (min-width: 992px) {
   .featurette-heading {
-    margin-top: 120px;
+    margin-top: 0px;
   }
 }
 
+.social-media{
+  text-align: center;
+}
+
+.social-media > li{
+  float: none;
+  display: inline-block;
+  margin: 4px 5px;
+}
+
+.social-media > li > a{
+  color: #C5C5C5;
+}
 
 
 /*
@@ -753,9 +842,15 @@ fieldset[disabled] .btn {
   opacity: .65;
 }
 .btn-default {
-  color: #000000;
-  background-color: #fff;
-  border-color: #000000;
+ color: #FFFFFF;
+  border-color: rgba(255, 255, 255, 0.92);
+  font-size: 10px;
+  margin-top: 10px;
+  background-color: transparent;
+  font-family: 'Lato';
+  text-transform: uppercase;
+  letter-spacing: 4pt;
+  font-style: normal;
 }
 .btn-default:hover,
 .btn-default:focus,
@@ -763,9 +858,9 @@ fieldset[disabled] .btn {
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  color: #000000;
+  /*color: #000000;
   background-color: transparent;
-  border-color: #adadad;
+  border-color: #adadad;*/
 
 }
 .btn-default:active,
@@ -799,11 +894,14 @@ fieldset[disabled] .btn-default.active {
   background-color: #333;
 }
 .btn-primary {
-    color: #000000;
-   background-color: transparent; 
+   color: #000000;
+  background-color: transparent;
   border-color: #000000;
-  border-width: 3px;
+  border-width: 2px;
   text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  font-style: normal;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -811,9 +909,10 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  color: #000000;
-  background-color: transparent;
+  color: #fff;
+  background-color: #000;
   border-color: #000000;
+  transition: 0.1s ease-in-out;
 }
 .btn-primary:active,
 .btn-primary.active,
