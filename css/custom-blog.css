@@ -25,9 +25,61 @@ h1 {
   font-size: 30px;
 }
 
-footer p {
-  text-align: center;
+.prev-next{
+    font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1pt;
+  margin-bottom: 20px;
+  text-align: right;
 }
+
+footer{
+    margin-bottom: 30px;
+}
+
+footer p {
+   text-align: center;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1pt;
+  margin-bottom: 15px;
+}
+
+footer a {
+  color: #000;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #444;
+  text-decoration: none;
+}
+
+.footer.row {
+  background-color: #000;
+  margin-bottom: 30px;
+  color: #fff;
+  padding: 5px 38px;
+}
+
+  .footer.row > ul > li {
+list-style: none;
+  text-align: right;
+  /* display: inline-block; */
+  float: left;
+  margin: 15px;
+    margin-bottom: 0px;
+  }
+
+  .footer.row > ul > li > a {
+  color: #fff;
+  }
+ .footer.row > ul > li > a:hover {
+  color: #444;
+  }
+
+
 
 
 /* Thumbnails
@@ -93,6 +145,19 @@ a.thumbnail.active {
 .overlay:hover{
   background-color: rgba(0, 0, 0, 0);
   transition: 0.2s linear;
+}
+
+.reminder{
+  background-color: #282828;
+  text-transform: uppercase;
+  padding: 13px 17px;
+  position: absolute;
+  z-index: 999;
+  font-size: 21px;
+  color: #fff;
+  letter-spacing: 2pt;
+  left: 123px;
+  box-shadow: 1px 1px 10px #373737;
 }
 
 
@@ -476,6 +541,7 @@ a.thumbnail.active {
   .navbar-right {
     float: right !important;
     margin-right: -15px;
+      padding-top: 15px;
   }
   .navbar-right ~ .navbar-right {
     margin-right: 0;
@@ -679,31 +745,34 @@ img.featurette-image{
 }
 
 .post-date{
-    text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 2px;
+   text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 4px;
+  font-weight: 800;
 }
 
 .post-category{
     text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 2px;
+  font-size: 11px;
+  letter-spacing: 4px;
   /* background-color: rgb(81, 80, 80); */
   /* color: #FFFFFF; */
   /* padding: 3px 6px; */
   /* border-radius: 2px; */
   margin-left: 20px;
+  font-weight: 800;
 }
 
 .post-author{
       text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 2px;
+  font-size: 11px;
+  letter-spacing: 4px;
   /* background-color: rgb(81, 80, 80); */
   /* color: #FFFFFF; */
   /* padding: 3px 6px; */
   /* border-radius: 2px; */
   margin-left: 20px;
+  font-weight: 800;
 }
 
 .lead {
@@ -761,7 +830,7 @@ img.featurette-image{
 
 @media (min-width: 992px) {
   .featurette-heading {
-    margin-top: 0px;
+      margin-top: 25px;
   }
 }
 

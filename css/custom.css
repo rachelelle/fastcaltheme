@@ -40,19 +40,18 @@ img.main-images{
 }
 
 .thumbnail {
-  display: block;
-  /*padding: 4px;*/
+    display: inline-block;
+  /* padding: 4px; */
   margin: 0px;
-  padding:0px;
+  padding: 0px;
   border: none;
-  /*margin-bottom: 20px;*/
+  width: 90%;
+  max-width: 350px;
+  /* margin-bottom: 20px; */
   line-height: 1.42857143;
   background-color: #fff;
-  /*border: 1px solid #ddd;*/
-  /*border-radius: 4px;*/
-/*  -webkit-transition: border .2s ease-in-out;
-       -o-transition: border .2s ease-in-out;
-          transition: border .2s ease-in-out;*/
+  /* border: 1px solid #ddd; */
+  border-radius: 0px;
 }
 .thumbnail > img,
 .thumbnail a > img {
@@ -470,8 +469,8 @@ a.thumbnail.active {
   font-size: 12px;
   text-transform: uppercase;
   color: #000;
-  font-weight: 500;
-  letter-spacing: 2px;
+  font-weight: 600;
+  letter-spacing: 1pt;
 }
 .navbar-default .navbar-brand {
   color: #777;
@@ -479,7 +478,7 @@ a.thumbnail.active {
 
 .navbar-default:hover{
 	transition: 0.3s ease-in-out;
-  background-color: rgba(255, 255, 255, 0.77);
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .navbar-default .navbar-brand:hover,
@@ -616,16 +615,58 @@ height:100%;
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
+.container.marketing {
+    padding: 0px 140px;
+  }
+
+
+
 .marketing .col-lg-4 {
-  margin-bottom: 20px;
-  text-align: center;
+
+    text-align: center;
+  margin: 67px 0px;
 }
 .marketing h2 {
-  font-weight: normal;
+    font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #000;
+  letter-spacing: 4px;
+  margin: 20px 0px;
 }
 .marketing .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
+    font-weight: 300;
+  /* text-transform: uppercase; */
+  font-size: 18px;
+  color: #000;
+  letter-spacing: 1px;
+  margin: 20px 28px;
+  /* font-family: L; */
+}
+
+.marketing a{
+  text-decoration: none;
+}
+
+.quote{
+   margin-top: 55px;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 2pt;
+  color: #000;
+}
+
+img.thumbnail a:hover{
+  background-color: rgba(255, 255, 255, .5);
+  transition: 0.2s;
+}
+
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 2px solid #797777;
 }
 
 
