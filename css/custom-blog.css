@@ -60,7 +60,7 @@ footer a:hover {
   background-color: #000;
   margin-bottom: 30px;
   color: #fff;
-  padding: 5px 38px;
+  padding: 5px 95px;
 }
 
   .footer.row > ul > li {
@@ -709,6 +709,10 @@ height:100%;
   margin-left: 10px;
 }
 
+.container.posts {
+  margin: 0;
+  width: 75%;
+}
 
 /* Featurettes
 ------------------------- */
